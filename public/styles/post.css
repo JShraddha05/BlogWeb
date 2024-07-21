@@ -1,0 +1,20 @@
+.post--field{
+    margin-left:-100px;
+   
+}
+.content--area{
+   width: 1113px;
+}
+.publish-btn{
+    background-color: #3D52A0;
+}
+.dot{
+    color: black;
+}
+a:hover{
+  text-decoration: none;
+
+}
+a:visited{
+    color: #8596de;
+}
