@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Add Post</h1>
+
+<form action="/submit" method="POST">
+    
+    <input type="text" name="title" class="form-control mb-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Title">
+    <input type="text" name="author" class="form-control mb-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Author">
+    <textarea rows="20" cols="200" class="form-control mb-3 content--area" aria-label="With textarea" name="content" ></textarea>
+    
+    <input class="btn btn-primary publish-btn mb-3" type="submit" value="Publish">
+</form>
+
+<%- include("partials/footer.ejs") %>

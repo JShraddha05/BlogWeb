@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+<h1><%= post.title %></h1>
+<p>Author : <em><%= post.author %></em></p>
+<p><%= post.date %></p>
+<p><%= post.content %></p>
+<div class="row">
+  <div class="col">
+<a href="/posts/<%= post.id %>/edit-post">
+<input type="button" class="btn btn-secondary mt-3 mb-3" value="Edit" name="edit-post">
+</a>
+</div>
+<div class="col">
+<form action="/posts/<%= post.id %>" method="POST">
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit" class="btn btn-dark mt-3 mb-3">Delete</button>
+  </form>
+</div>
+ </div> 
+<%- include("partials/footer.ejs") %>

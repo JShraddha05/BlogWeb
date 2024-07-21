@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs")%>
+
+    <ul >
+        
+        <% posts.forEach(post => { %>
+            <div class="post--field shadow p-3 mt-3 mb-3 bg-body-tertiary rounded">
+            <li class="post">
+                <a href="/posts/<%= post.id %>">
+                <h3 class="post-title"><%= post.title %></h3>
+            <p class="post-detail"><%=post.author%><span class="dot">·</span><%= post.date %></p>
+        </a>
+        </li>
+            </div>
+        <% }); %>
+       
+    </ul>
+
+    
+
+    
+
+<%- include("partials/footer.ejs")%>
